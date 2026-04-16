@@ -1,0 +1,17 @@
+Project: Two-Stage CMOS Op-Amp
+
+Technology: 180nm CMOS
+Supply Voltage: 1.8V
+
+Description:
+
+The schematic consists of:
+
+1. Differential input stage
+2. Current mirror load
+3. Second gain stage
+4. Miller compensation capacitor
+5. Bias circuit
+
+Simulation tool:
+Cadence Virtuoso Spectre
