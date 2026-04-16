@@ -1,0 +1,12 @@
+## AC Testbench Setup
+
+This figure shows the AC analysis testbench used to evaluate the performance of the two-stage CMOS operational amplifier designed in Cadence Virtuoso.
+
+The testbench includes:
+- Differential AC input voltage source applied at the input terminals
+- DC supply voltage (VDD = 1.8 V)
+- Load capacitance connected at the output node
+- Ground reference node
+- Output measurement point for gain and phase response
+
+An AC sweep analysis is performed to measure the open-loop gain, phase margin, and bandwidth of the operational amplifier.
