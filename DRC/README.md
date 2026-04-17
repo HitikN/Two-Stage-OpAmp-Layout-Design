@@ -100,3 +100,111 @@ Therefore, DRC-clean layout is mandatory before performing LVS verification.
 ## Next Step After DRC
 
 After achieving a DRC-clean layout, Layout Versus Schematic (LVS) verification was performed to ensure electrical equivalence between schematic and layout.
+
+
+# 🛠️ Design Rule Check (DRC) Report
+
+## 📌 Overview
+
+During the layout development of the **two-stage CMOS Operational Amplifier (Op-Amp)**, multiple Design Rule Check (DRC) violations were encountered and resolved.  
+
+DRC ensures that the layout follows all **fabrication technology rules**, which is essential before manufacturing the circuit.
+
+All errors were carefully analyzed and corrected to achieve a **clean DRC result**.
+
+---
+
+# 🚨 Common Types of DRC Errors Observed
+
+The following DRC violations were observed and corrected during the layout process.
+
+---
+
+## 1️⃣ Metal Spacing Violations
+
+📖 **Description:**  
+Metal spacing violations occur when the distance between two metal layers is smaller than the minimum spacing defined by the technology rules.
+
+🔧 **Fix Applied:**  
+- Increased spacing between metal routing lines  
+- Repositioned metal paths to maintain safe separation  
+- Ensured spacing follows technology design rules  
+
+✅ **Status:** Resolved
+
+---
+
+## 2️⃣ Minimum Width Violations
+
+📖 **Description:**  
+Minimum width violations occur when the width of metal or polysilicon lines is smaller than the required minimum value.
+
+🔧 **Fix Applied:**  
+- Increased width of metal tracks  
+- Adjusted polysilicon dimensions  
+- Verified width using layout measurement tools  
+
+✅ **Status:** Resolved
+
+---
+
+## 3️⃣ Contact Enclosure Violations
+
+📖 **Description:**  
+Contact enclosure violations occur when contacts (vias) are not fully covered by surrounding metal layers.
+
+🔧 **Fix Applied:**  
+- Extended metal layers around contacts  
+- Ensured proper enclosure margins  
+- Verified enclosure rules using DRC tool  
+
+✅ **Status:** Resolved
+
+---
+
+## 4️⃣ Minimum Area Violations
+
+📖 **Description:**  
+Minimum area violations occur when the total area of a layout shape is smaller than the required minimum allowed area.
+
+🔧 **Fix Applied:**  
+- Increased metal patch size  
+- Adjusted layout geometry  
+- Verified area compliance  
+
+✅ **Status:** Resolved
+
+---
+
+## 5️⃣ Well Tap Violations (NTAP / PTAP)
+
+📖 **Description:**  
+Well tap violations occur when proper substrate connections are missing.
+
+NTAP connects **N-well → VDD**  
+PTAP connects **P-substrate → GND**
+
+🔧 **Fix Applied:**  
+- Added NTAP and PTAP structures  
+- Connected taps to supply rails  
+- Ensured proper spacing between taps  
+
+✅ **Status:** Resolved
+
+---
+
+# 🧪 Final DRC Status
+
+After correcting all violations, the layout successfully passed DRC verification.
+
+🎯 **DRC Result:** CLEAN  
+❌ **Number of Errors:** 0  
+⚠️ **Number of Warnings:** 0  
+
+---
+
+# 🏁 Conclusion
+
+Passing DRC confirms that the layout satisfies all **fabrication design rules** and is ready for the next verification stage.
+
+➡️ **Next Step:** Layout Versus Schematic (LVS) Verification
